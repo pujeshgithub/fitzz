@@ -1,0 +1,32 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+   
+
+}
+.bmi{
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(219, 11, 11);
+    padding: 20px;
+}
+h1, h2{
+    color: white;
+    
+}
+
+input{
+    width: 300px;
+}
+.nextPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nextPageContinue{
+    color: black;
+    display: flex;
+
+}
