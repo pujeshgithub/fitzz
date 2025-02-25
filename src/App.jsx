@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home';
-import SignUp from './Pages/SignUp.jsx';
+import Signup from './Pages/Signup';
 import Login from './Pages/Login'
 import Fitzz from './Pages/Fitzz';
 
@@ -12,7 +12,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/signup' element = {<SignUp/>}/>
+        <Route path='/signup' element = {<Signup/>}/>
         <Route path='/login' element = {<Login/>}/>
         <Route path='/fitzz' element = {<Fitzz/>}/>
         
