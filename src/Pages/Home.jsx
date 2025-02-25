@@ -8,7 +8,7 @@ const Home = () => {
   const[inches, setInches] = useState(0)
   const[weight, setWeight] = useState(40)
   const[bmi, setBmi] = useState(0)
-  const[abourbmi, setAboutBmi] = useState()
+  const[aboutbmi, setAboutBmi] = useState()
 
   const f = parseInt(feet);
   const w = parseInt(weight);
@@ -24,9 +24,9 @@ const Home = () => {
    const calHeight = (f*12 + inc) * 0.0254
    const result = w / (calHeight * calHeight)
    setBmi(result)
-   if(bmi<=18.5){
+   if(result <= 18.9){
     setAboutBmi('Your Under Weight')
-   }else if(bmi >18.5 && bmi <= 24.5){
+   }else if(result > 18.9 && bmi <= 24.9){
     setAboutBmi("you are Normal")
    }else{
     setAboutBmi('you are Over weight')
@@ -70,9 +70,12 @@ const Home = () => {
         />
 
       </div>
-      <Button onClick={calBmi} variant="contained">Check BMI</Button>
+      
       <h2>BMI: {bmi} </h2>
-      <p> Result: {abourbmi}</p>
+      <p> Result: {aboutbmi}</p>
+
+      <Button onClick={calBmi} variant="contained">Check BMI</Button>
+    
       </div>
 
 

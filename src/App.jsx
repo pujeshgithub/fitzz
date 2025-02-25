@@ -1,9 +1,10 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home';
-import SignUp from './Pages/SignUp';
+import SignUp from './Pages/SignUp.jsx';
 import Login from './Pages/Login'
 import Fitzz from './Pages/Fitzz';
+
 
 const App = () => {
   return (
