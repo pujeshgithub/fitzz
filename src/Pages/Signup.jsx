@@ -24,11 +24,11 @@ const Signup = () => {
 
       createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
-    // Signed up 
-    const user = userCredential.user;
+    
     alert('Account has been created with this email')
         navigate('/login')
-    // ...
+   
+        
   })
   .catch((error) => {
     const errorCode = error.code;
